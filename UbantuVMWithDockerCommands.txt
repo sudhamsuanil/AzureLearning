@@ -1,0 +1,13 @@
+# Create docker image going into the binaries where we have binaries (like publish)
+sudo docker build -t ubantuwebapp .
+# Check images once deployed
+sudo docker image ls
+# Create instance of the image
+sudo docker run -d p 80:80 --name myapp ubantuwebapp
+# Check containers running
+sudo docker ps
+# Stop a running container
+sudo docker stop 234 (3 charcters of containers)
+# remove a existing image
+sudo docker image rm 234 (3 charcters of containers)
+
